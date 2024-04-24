@@ -1,0 +1,19 @@
+{
+  "name": "parcel-launcher",
+  "version": "1.0.0",
+  "source": "src/manifest.json",
+  "license": "MIT",
+  "dependencies": {
+    "@parcel/config-webextension": "^2.12.0",
+    "browser-polyfill": "^3.20.2",
+    "parcel": "^2.12.0",
+    "webextension-polyfill": "^0.11.0"
+  },
+  "scripts": {
+    "build": "rm -rf dist ; parcel build ./src/manifest.json --dist-dir dist --no-cache",
+    "watch": "parcel watch ./src/manifest.json"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.0"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "esModuleInterop": true,
+    "lib": ["ES2021", "dom"],
+    "module": "esnext"
+  },
+  "paths": {
+    "react": ["./node_modules/@types/react"]
+  },
+  "allowSyntheticDefaultImports": true
+}

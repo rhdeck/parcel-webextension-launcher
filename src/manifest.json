@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "Launcher Test",
+    "version": "0.0.1",
+    "type": "module",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*.statechange.ai/*"
+            ],
+            "js": [
+                "launcher.ts"
+            ]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "matches": [
+                "https://*.statechange.ai/*"
+            ],
+            "resources": [
+                "main.ts"
+            ]
+        }
+    ]
+}
